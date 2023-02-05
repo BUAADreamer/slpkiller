@@ -35,7 +35,7 @@ def minEditDistance(source: str, target: str, del_cost=1, ins_cost=1, sub_cost=2
     m = len(target)
     D = [[0 for i in range(m + 1)] for j in range(n + 1)]
     P = [[[] for i in range(m + 1)] for j in range(n + 1)]  # Pointers Matrix
-    points = [(-1, 0), (-1, -1), (0, -1), (-1, -1)]
+    points = [(-1, 0), (-1, -1), (0, -1), (-1, -1)]  # 指示器，前三个分别代表del,sub,ins 第四个代表相等替换
     D[0][0] = 0
     # 初始化
     for i in range(1, m + 1):
@@ -53,8 +53,10 @@ def minEditDistance(source: str, target: str, del_cost=1, ins_cost=1, sub_cost=2
             pos = np.argmin(distances)
             mindis = distances[pos]
             if distances[1] == mindis and source[i - 1] == target[j - 1]:
+                # 两个字母相等替换且这时是最小路径
                 P[i][j].append(3)
             else:
+                # 其他正常情况都需要变更字母
                 for k in range(3):
                     if distances[k] == mindis:
                         P[i][j].append(k)
@@ -63,8 +65,9 @@ def minEditDistance(source: str, target: str, del_cost=1, ins_cost=1, sub_cost=2
         i, j = n, m
         backtrace = []
         while i > 0 or j > 0:
+            # 从(n,m)开始往回寻找最短编辑路径
             backtrace.append((i, j))
-            point = points[P[i][j][0]]
+            point = points[P[i][j][0]]  # 选取第一个指示器，也可以替换成其他选择
             i += point[0]
             j += point[1]
         backtrace.reverse()
