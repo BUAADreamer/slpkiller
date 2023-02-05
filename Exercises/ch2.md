@@ -19,10 +19,10 @@
 
 参见`slpkiller/Eliza.py`的代码实现，结果如下:
 
-![](../pics/2_3.jpg)
+![](pics/2_3.jpg)
 
 ### 2.4-2.7
 
 参见`slpkiller/MinEditDistance.py`的代码实现，结果如下
 
-![](../pics/2_4-7.jpg)
+![](pics/2_4-7.jpg)
