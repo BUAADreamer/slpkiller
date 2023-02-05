@@ -2,14 +2,13 @@
 # -*- coding: UTF-8 -*-
 import re
 
-data = [
-    (re.compile(r'.*我很(难受|伤心|开心|高兴).*'), '为什么你会{}'),
-    (re.compile(r'.*我感到(难受|伤心).*'), '很遗憾你感到{}'),
-    (re.compile(r'.*我经常(.*)[。？！，：；]*'), '能举个你{}的例子嘛？')
-]
-
 
 def eliza(text: str):
+    data = [
+        (re.compile(r'.*我很(难受|伤心|开心|高兴).*'), '为什么你会{}'),
+        (re.compile(r'.*我感到(难受|伤心).*'), '很遗憾你感到{}'),
+        (re.compile(r'.*我经常(.*)[。？！，：；]*'), '能举个你{}的例子嘛？')
+    ]
     for pattern, answer in data:
         res = re.search(pattern, text)
         if res:
