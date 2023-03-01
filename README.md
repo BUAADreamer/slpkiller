@@ -1,8 +1,19 @@
 # slpkiller
 
-This is a repo for learning [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/), which has codes, exercise answers and notes made by our SLP Learning Group.
+用于学习各种**语音和语言处理**知识的书籍、课程的仓库
 
-## SLP Learning Group
+目前正在进行 [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/), 将会逐步更新和这本书相关的代码，练习答案和笔记
+
+## 北航SLP学习小组
 
 * [BUAADreamer](https://github.com/BUAADreamer)
 * [inforin](https://github.com/inforin)
+* [ninibymilk](https://github.com/ninibymilk)
+* [Kingsley](https://github.com/Kingslry-git)
+
+### 活动介绍
+
+* 定下规定期限完成某个章节的自学
+* 定期组织对每个章节的交流和总结
+  * 主讲人进行讲解，其他人提出和解答疑问
+  * 主讲人负责该章节的PPT/笔记/代码整理
