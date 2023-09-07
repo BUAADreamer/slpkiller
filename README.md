@@ -9,7 +9,7 @@
 * [BUAADreamer](https://github.com/BUAADreamer)
 * [inforin](https://github.com/inforin)
 * [ninibymilk](https://github.com/ninibymilk)
-* [Kingsley](https://github.com/Kingslry-git)
+* [Kingsley](https://github.com/Kuangdd01)
 
 ### 活动介绍
 
